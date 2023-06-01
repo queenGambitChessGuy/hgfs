@@ -1,0 +1,46 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            import { Tk, Label } from 'tkinter';
+            import { ImageTk, Image } from 'PIL';
+            import { ttk } from 'tkinter';
+            import { time } from 'time';
+            import { webbrowser } from 'webbrowser';
+            import { st } from 'streamlit';
+            
+            const root = new Tk();
+            root.config(bg="white");
+            root.title("Environment");
+            root.geometry("910x750");
+            const { root } = require('tkinter');
+            const close = new ImageTk.PhotoImage(Image.open("close.jpg"));
+            const next_img = new ImageTk.PhotoImage(Image.open("next.jpg"));
+            const prev_img = new ImageTk.PhotoImage(Image.open("previous.jpg"));
+            const dpsmisLogo = new ImageTk.PhotoImage(Image.open("logo.jpg"));
+            const info_corner = new ImageTk.PhotoImage(Image.open("information_corner.jpg"));
+            const event_corner = new ImageTk.PhotoImage(Image.open("event_corner.jpg"));
+            const dpsmis = new ImageTk.PhotoImage(Image.open("dpsmis.jpg"));
+            const dot = new ImageTk.PhotoImage(Image.open("dot.jpg"));
+            const news = new ImageTk.PhotoImage(Image.open("news.jpg"));
+            const back = new ImageTk.PhotoImage(Image.open("back.png"));
+            const env1 = new ImageTk.PhotoImage(Image.open("env1.jpg"));
+            const env2 = new ImageTk.PhotoImage(Image.open("env2.png"));
+            const tree1 = new ImageTk.PhotoImage(Image.open("tree1.jpg"));
+            const tree2 = new ImageTk.PhotoImage(Image.open("tree2.jpg"));
+            const env_corner = new ImageTk.PhotoImage(Image.open("env_corner.jpg"));
+            const nintendo = new ImageTk.PhotoImage(Image.open("nintendo.jpg"));
+            const dpsmisLogo_image = new Label(root, { image: dpsmisLogo, bg: "white" });
+            dpsmisLogo_image.place({ relx: 0.5, rely: 0.375, anchor: "CENTER" });
+            const tree1_img = new Label(root, { image: tree1, bg: "white" });
+            tree1_img.place({ relx: 0.2, rely: 0.375, anchor: "CENTER" });
+            const tree2_img = new Label(root, { image: tree2, bg: "green" });
+            tree2_img.place({ relx: 0.8, rely: 0.375, anchor: "CENTER" });
+            
+            
+            root.mainloop();
+
+        </script>
+    </body>
+</html>
